@@ -13,6 +13,7 @@ RUN python3 -m pip install --upgrade pip setuptools
 RUN pip3 install --use-feature=2020-resolver --no-cache-dir psutil dm-sonnet==1.*
 RUN pip list | grep 'tensorflow ' || pip3 install --use-feature=2020-resolver --no-cache-dir tensorflow==1.15.*
 
+# Some important fix
 # adding fix
 
 RUN pip3 install --use-feature=2020-resolver --no-cache-dir git+https://github.com/openai/baselines.git@master
