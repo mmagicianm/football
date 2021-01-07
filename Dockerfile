@@ -14,6 +14,9 @@ RUN pip3 install --use-feature=2020-resolver --no-cache-dir psutil dm-sonnet==1.
 RUN pip list | grep 'tensorflow ' || pip3 install --use-feature=2020-resolver --no-cache-dir tensorflow==1.15.*
 
 # adding fix
+# new important hotfix
+# a new feature is set here
+# the best feature in the dark hole
 
 RUN pip3 install --use-feature=2020-resolver --no-cache-dir git+https://github.com/openai/baselines.git@master
 COPY . /gfootball
